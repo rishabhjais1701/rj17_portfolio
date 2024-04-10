@@ -21,21 +21,21 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>BMS INSTITUTE OF TECHNOLOGY AND MANAGEMENT, BANGALORE
-          <br></br>
-          Bachelor’s Of Engineering in Electronics and Communication - CGPA - 7.02
-          <br></br>
+          <br />
+          Bachelors Of Engineering in Electronics and Communication - CGPA - 7.02
+          <br />
           12/2020 – 06/2024
           
           </li>
           <li>Children Sr. Secondary School, Kota 
-          <br></br>
+          <br />
           Intermediate - Percentage - 68.2% 
-          <br></br>
+          <br />
           06/2019 – 08/2020
           </li>
 
-          <li>Children's Garden School
-            <br></br>
+          <li>Childrens Garden School
+            <br />
             High School - CGPA - 10
           </li>
           
@@ -60,7 +60,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>ANVESHANA 2022 Winner: Topic - Power Generating Roadways
-          <br></br>
+          <br />
           Designed a groundbreaking plan for harnessing wind energy from moving vehicles, to generate renewable electricity
           using vertical axis wind turbines near high-traffic roads and railway lines.</li>
         <li>Runner up in Project Based Learning 4th and 5th sem held @BMSIT campus.</li>
@@ -84,7 +84,7 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-desk_image.jpeg" width={300} height={300} />
+        <Image src="/images/about-desk_image.jpeg" width={300} height={300} alt="About Me" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
