@@ -1,28 +1,30 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
-const fromEmail = process.env.FROM_EMAIL;
 
 export async function POST(req, res) {
   const { email, subject, message } = await req.json();
   console.log(email, subject, message);
+  
+  // Assume data processing or saving logic here
+  
   try {
-    const data = await resend.emails.send({
-      from: 'Rishabh Jaiswal <rishabhjais1701@gmail.com>',
-      to: ['rishabhjais1701@gmail.com'],
-      subject: 'Hello',
-      react: (
-        <>
-          <h1>{subject}</h1>
-          <p>Thank you for contacting us!</p>
-          <p>New message submitted:</p>
-          <p>{message}</p>
-        </>
-      ),
-    });
-    return NextResponse.json(data);
+    // Placeholder for data processing or saving logic
+
+    // Example response for demonstration purposes
+    const responseData = {
+      status: "success",
+      message: "Message received successfully",
+    };
+
+    return NextResponse.json(responseData);
   } catch (error) {
-    return NextResponse.json({ error });
+    console.error("Error processing data:", error);
+    
+    const errorResponse = {
+      status: "error",
+      message: "Failed to process the message",
+      error: error.message,
+    };
+
+    return NextResponse.json(errorResponse);
   }
 }
